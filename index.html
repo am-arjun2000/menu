@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  @media screen and (max-width: 767px) {
+    video {
+      width: 100%;
+      height: auto;
+    }
+  }
+  </style>
+</head>
+<body>
+
+<video id="myVideo" width="100%" height="100%" autoplay controls=false onended="this.currentTime = this.duration;">
+  <source src="video1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<script>
+   var pauseButton = document.querySelector('.pause');
+   pauseButton.style.display = "none";
+   var seekbar = document.querySelector('.seekbar');
+   seekbar.style.display = "none";
+   var nextButton = document.querySelector('.next-button');
+   nextButton.style.display = "none";
+   var prevButton = document.querySelector('.prev-button');
+   prevButton.style.display = "none";
+</script>
+
+
+</body>
+
+
+</html>
